@@ -1,15 +1,40 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+title: "RadarScenes"
+layout: splash
+permalink: /
+header:
+  overlay_filter:  rgba(10, 160, 150, 0.85)
+  overlay_image: /assets/whole_scene.png
+  actions:
+    - label: "Download"
+      url: "https://zenodo.org/record/4559821"
+excerpt: "A real-world radar point cloud data set for automotive applications. Four radar sensors. Over 4 hours of driving. More than 7500 unique objects."
+intro: 
+  - excerpt: "The data set is licensed under [Creative Commons Attribution Non Commercial Share Alike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). Find out more about [how to cite](/citation) the data set."
+feature_row:
+  - image_path: /assets/statistics.png
+    alt: "statistics"
+    title: "Statistics"
+    excerpt: "Learn more about the data set, the number of objects within it and other useful statistics."
+    url: "/statistics"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/labeling_splash.png
+    alt: "labeling"
+    title: "Labeling"
+    excerpt: "The data set contains point-wise class labels as well as *track-ids* for the individual objects."
+    url: "/labeling"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/publications_splash.jpg
+    title: "Publications"
+    excerpt: "There already exist a number of publications using this data set."
+    url: "/publications"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 ---
-# About RadarScenes
 
-* 4x Radar, 1x Camera
-* &gt; 100 km driving, &gt; 4 hours 
-* 158 different sequences
-* &gt; 7500 unique road users
-* 11 different object classes
+{% include feature_row id="intro" type="center" %}
 
-![](vehicle.svg)
+{% include feature_row %}
+

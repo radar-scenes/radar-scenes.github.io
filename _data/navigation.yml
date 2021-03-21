@@ -1,0 +1,23 @@
+main:
+  - title: "News"
+    url: /news/
+  - title: "Data Set"
+    url: "/dataset/about"
+  - title: "Citation"
+    url: /citation/
+  - title: "Publications"
+    url: /publications/
+  - title: "Contact"
+    url: /contact/
+
+dataset:
+  - title: "About"
+    children:
+      - title: "Sensor Setup"
+        url: "/dataset/sensors/"
+      - title: "Labeling"
+        url: "/dataset/labeling"
+      - title: "Structure"
+        url: "/dataset/structure"
+  - title: "Examples"
+    url: "/dataset/examples"		 
