@@ -23,7 +23,7 @@ feature_row:
     alt: "labeling"
     title: "Labeling"
     excerpt: "The data set contains point-wise class labels as well as *track-ids* for the individual objects."
-    url: "/labeling"
+    url: "/dataset/labeling"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/publications_splash.jpg

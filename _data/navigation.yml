@@ -12,12 +12,15 @@ main:
 
 dataset:
   - title: "About"
+    url: "/dataset/about"	
     children:
+      - title: "Structure"
+        url: "/dataset/structure"
       - title: "Sensor Setup"
         url: "/dataset/sensors/"
       - title: "Labeling"
         url: "/dataset/labeling"
-      - title: "Structure"
-        url: "/dataset/structure"
   - title: "Examples"
     url: "/dataset/examples"		 
+  - title: "Tools & API"
+    url: "/dataset/tools"

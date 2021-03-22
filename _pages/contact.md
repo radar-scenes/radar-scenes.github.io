@@ -16,4 +16,8 @@ We are looking forward to hearing about your publications, so don't hesitate to 
 
 You can easily reach us via e-mail: [hello@radar-scenes.com](mailto:hello@radar-scenes.com)
 
-In case you want to directly contact one of the authors, just look for their other publications to find their e-mail addresses.
+
+## The Team
+Feel free to follow the other research projects our team members pursue. 
+
+{% include authors %}

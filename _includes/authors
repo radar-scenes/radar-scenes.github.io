@@ -1,0 +1,132 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.custom__authors {
+  --l: calc(40vw/var(--n-cols));
+  --hl: calc(.5*var(--l));
+  --ri: calc(.5*1.73205*var(--l));
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  grid-template: repeat(var(--n-rows), var(--l))/repeat(var(--n-cols), var(--ri));
+  grid-gap: var(--hl) 0;
+  overflow: hidden;
+  margin: 0;
+  margin-top: -50px;
+  padding: 0 0;
+  height: 80vh;
+  filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.6));
+}
+@media (orientation: landscape) {
+  custom__authors {
+    --l: calc(100vh/(var(--n-rows) + 3));
+  }
+}
+
+.hex-cell {
+  overflow: hidden;
+  grid-column-end: span 2;
+  margin: calc(-1*var(--hl)) 0;
+  transform: scale(0.95);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background-color: #777;
+}
+
+img {
+  --hl: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(calc(1 + .2*var(--hl)));
+  filter: brightness(calc(.6*(1 + var(--hl))));
+  transition: .7s;
+  filter: drop-shadow(2px 2px 5px);
+}
+
+
+.hex-cell:hover > img {
+  --hl: 1;
+  opacity: 0.2;
+}
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+.hex-cell:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  padding: 4px 4px;
+}
+</style>
+</head>
+
+
+<div class="custom__authors" style="--n-rows: 3; --n-cols: 6">
+  <style>.hex-cell:nth-of-type(5n + 1) { grid-column-start: 2 }</style>
+    <div class="hex-cell">
+    <img src="/assets/schumann.jpg"/>
+	  <a href="https://ieeexplore.ieee.org/author/37086226532" target="_blank">
+      <div class="middle">
+      <div class="text">OLE SCHUMANN<br><br>Mercedes-Benz AG<br>TU Dortmund</div>
+      </div></a>
+    </div>
+  <div class="hex-cell">
+  <img src="/assets/hahn.jpg"/>
+	<a href="https://ieeexplore.ieee.org/author/37085432560" target="_blank">
+    <div class="middle">
+    <div class="text">MARKUS HAHN<br><br>at his time at<br>Mercedes-Benz AG</div>
+    </div></a>
+  </div>
+  <div class="hex-cell"><img src="/assets/scheiner.jpg"/>
+	<a href="https://scholar.google.de/citations?user=XxkSXk0AAAAJ&hl=de" target="_blank">
+    <div class="middle">
+    <div class="text">NICOLAS SCHEINER<br><br>Mercedes-Benz AG</div>
+    </div></a>
+  </div>
+  <div class="hex-cell"><img src="https://images.unsplash.com/photo-1469975692758-66d107a536cb?w=650&amp;fm=jpg"/>
+	<a href="https://ieeexplore.ieee.org/author/37086913929" target="_blank">
+    <div class="middle">
+    <div class="text">JULIUS F. TILLY<br><br>Mercedes-Benz AG</div>
+    </div></a>
+  </div>
+  <div class="hex-cell"><img src="https://images.unsplash.com/photo-1490845060161-85f9ce08a9f4?w=650&amp;fm=jpg"/>
+	<a href="https://ieeexplore.ieee.org/author/37086445743" target="_blank">
+    <div class="middle">
+    <div class="text">FABIO WEISHAUPT<br><br>Mercedes-Benz AG</div>
+    </div></a>
+  </div>
+  <div class="hex-cell"><img src="/assets/dickmann.jpg"/>
+    <a href="https://www.researchgate.net/profile/Juergen-Dickmann" target="_blank">
+    <div class="middle">
+    <div class="text">JÜRGEN DICKMANN<br><br>Mercedes-Benz AG</div>
+    </div></a>
+  </div>
+  <div class="hex-cell"><img src="/assets/woehler.png"/>
+	<a href="http://www.bv.e-technik.tu-dortmund.de/cms/de/home/index.html" target="_blank">
+    <div class="middle">
+    <div class="text">CHRISTIAN WÖHLER<br><br>TU Dortmund</div>
+    </div></a>
+  </div>
+
+</div>
+
+
+</html>
+
