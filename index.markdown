@@ -12,11 +12,11 @@ excerpt: "A real-world radar point cloud data set for automotive applications. F
 intro: 
   - excerpt: "The data set is licensed under [Creative Commons Attribution Non Commercial Share Alike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). Find out more about [how to cite](/citation) the data set."
 feature_row:
-  - image_path: /assets/statistics.png
+  - image_path: /assets/ndet_vs_range.png
     alt: "statistics"
     title: "Statistics"
     excerpt: "Learn more about the data set, the number of objects within it and other useful statistics."
-    url: "/statistics"
+    url: "/dataset/statistics"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/labeling_splash.png

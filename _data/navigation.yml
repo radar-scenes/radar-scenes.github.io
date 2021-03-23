@@ -20,6 +20,8 @@ dataset:
         url: "/dataset/sensors/"
       - title: "Labeling"
         url: "/dataset/labeling"
+      - title: "Statistics"
+        url: "/dataset/statistics"
   - title: "Examples"
     url: "/dataset/examples"		 
   - title: "Tools & API"
