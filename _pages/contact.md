@@ -2,7 +2,7 @@
 title: "Contact"
 layout: single
 classes: wide
-permalink: "/contact/"
+permalink: /contact/
 sidebar: false
 header:
   overlay_color: "#000"

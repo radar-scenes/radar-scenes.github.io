@@ -34,7 +34,7 @@
   background-color: #777;
 }
 
-img {
+.hex-cell img {
   --hl: 0;
   width: 100%;
   height: 100%;
@@ -82,7 +82,7 @@ img {
   <style>.hex-cell:nth-of-type(5n + 1) { grid-column-start: 2 }</style>
     <div class="hex-cell">
     <img src="/assets/schumann.jpg"/>
-	  <a href="https://ieeexplore.ieee.org/author/37086226532" target="_blank">
+	  <a href="https://scholar.google.com/citations?hl=de&authuser=1&user=kixLtIcAAAAJ" target="_blank">
       <div class="middle">
       <div class="text">OLE SCHUMANN<br><br>Mercedes-Benz AG<br>TU Dortmund</div>
       </div></a>
