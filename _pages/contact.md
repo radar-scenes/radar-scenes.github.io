@@ -16,6 +16,8 @@ We are looking forward to hearing about your publications, so don't hesitate to 
 
 You can easily reach us via e-mail: [hello@radar-scenes.com](mailto:hello@radar-scenes.com)
 
+We use [GitHub's issue tracker](https://github.com/radar-scenes/dataset/issues) to answer questions and to track bugs and issues that are brought up by the community.
+If you have a questions, please look first on this website for an answer and then head over to our issue tracker to find out if your question was already asked.
 
 ## The Team
 Feel free to follow the other research projects our team members pursue. 
