@@ -10,6 +10,12 @@ header:
   overlay_image: /assets/citation.jpg
 ---
 
+## RadarScenes
+
+A pre-print of the RadarScenes paper can be found on [arxiv.org](https://arxiv.org/abs/2104.02493).
+
+## Further Publications
+
 The RadarScenes data set was already used in a couple of journal- as well as conference papers. The following list of articles gives you some ideas, how the data set can be used.
 
 Notice that the data set has grown over time and only a subset of the whole data set was used in the different articles.

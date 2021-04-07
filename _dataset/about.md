@@ -16,6 +16,8 @@ The data set was recorded between 2016 and 2018 in Ulm, Germany.
 
 Several [publications](/publications) from the machine learning field make use of the data set.
 
+A pre-print of the RadarScenes paper can be found on [ArXiv.org](https://arxiv.org/abs/2104.02493){: .btn .btn--info}.
+
 
 ## Disclaimer
 
