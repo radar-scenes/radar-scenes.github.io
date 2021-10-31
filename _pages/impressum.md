@@ -5,6 +5,8 @@ last_modified_at: 2021-03-21
 layout: single
 ---
 
+The data set was created by members of the Radar Perception Team of Mercedes-Benz.
+
 Information in accordance with Section 5 TMG
 
 ![](../assets/address.png)
