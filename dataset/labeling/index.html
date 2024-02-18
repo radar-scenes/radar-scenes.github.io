@@ -1,0 +1,425 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Labeling - RadarScenes</title>
+<meta name="description" content="How the data set was annotated.">
+
+
+  <meta name="author" content="RadarScenes">
+  
+  <meta property="article:author" content="RadarScenes">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="RadarScenes">
+<meta property="og:title" content="Labeling">
+<meta property="og:url" content="/dataset/labeling/">
+
+
+  <meta property="og:description" content="How the data set was annotated.">
+
+
+
+  <meta property="og:image" content="/assets/whole_scene.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2024-02-18T10:34:40+00:00">
+
+
+
+  <meta property="article:modified_time" content="2021-03-25T00:00:00+00:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/dataset/labeling/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "RadarScenes",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/logo.png" alt="RadarScenes"></a>
+        
+        <a class="site-title" href="/">
+          RadarScenes
+          <span class="site-subtitle">A Real World Radar Point Cloud Data Set</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/news/">News</a>
+            </li><li class="masthead__menu-item">
+              <a href="/dataset/about">Data Set</a>
+            </li><li class="masthead__menu-item">
+              <a href="/citation/">Citation</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/">Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/contact/">Contact</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(10, 160, 150, 0.85), rgba(10, 160, 150, 0.85)), url('/assets/whole_scene.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Labeling
+
+        
+      </h1>
+      
+        <p class="page__lead">How the data set was annotated.
+</p>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <a href="/dataset/about"><span class="nav__sub-title">About</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/dataset/structure">Structure</a></li>
+          
+            <li><a href="/dataset/sensors/">Sensor Setup</a></li>
+          
+            <li><a href="/dataset/labeling">Labeling</a></li>
+          
+            <li><a href="/dataset/statistics">Statistics</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/dataset/examples"><span class="nav__sub-title">Examples</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/dataset/tools"><span class="nav__sub-title">Tools & API</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Labeling">
+    <meta itemprop="description" content="How the data set was annotated.">
+    <meta itemprop="datePublished" content="2024-02-18T10:34:40+00:00">
+    <meta itemprop="dateModified" content="2021-03-25T00:00:00+00:00">
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="general">General</h2>
+
+<p>Data annotation for automotive radar point clouds is an extremely tedious task.
+It requires human experts with a lot of experience to accurately identify all radar points which correspond to the objects of interest.</p>
+
+<p>In this data set, only moving objects were annotated. That is, the static environment (trees, poles, curbstones, houses, …) is ignored and also potentially moving objects (parked cars, standing pedestrians) are not annotated.</p>
+
+<p>To ensure high quality annotations, only manually labeled data created by human experts is used.</p>
+
+<h2 id="the-11-object-classes">The 11 Object Classes</h2>
+
+<p>Eleven different object classes are labeled: <code class="language-plaintext highlighter-rouge">car</code>, <code class="language-plaintext highlighter-rouge">large vehicle</code>, <code class="language-plaintext highlighter-rouge">truck</code>, <code class="language-plaintext highlighter-rouge">bus</code>, <code class="language-plaintext highlighter-rouge">train</code>, <code class="language-plaintext highlighter-rouge">bicycle</code>, <code class="language-plaintext highlighter-rouge">motorized two-wheeler</code>, <code class="language-plaintext highlighter-rouge">pedestrian</code>, <code class="language-plaintext highlighter-rouge">pedestrian group</code>, <code class="language-plaintext highlighter-rouge">animal</code>, and <code class="language-plaintext highlighter-rouge">other</code>.
+The <code class="language-plaintext highlighter-rouge">pedestrian group</code> label is assigned where no certain separation of individual pedestrians can be made.
+The <code class="language-plaintext highlighter-rouge">other</code> class consists of various other road users that do not fit well in any of these categories, e.g., skaters or moving pushcarts.
+In addition to the eleven object classes, a <code class="language-plaintext highlighter-rouge">static</code> label is assigned to all remaining points.</p>
+
+<p>All labels were chosen in a way to minimize disagreements between different experts’ assessment, e.g., a large pickup van may have been characterized as car or truck if no large vehicle label had been present.</p>
+
+<h2 id="the-5-simplified-classes">The 5 Simplified Classes</h2>
+
+<p>In addition to the regular 11 classes, a mapping function is provided along with the data set tools which project the majority of classes to a more coarse variant containing only: <code class="language-plaintext highlighter-rouge">car</code>, <code class="language-plaintext highlighter-rouge">large vehicle</code>, <code class="language-plaintext highlighter-rouge">two-wheeler</code>, <code class="language-plaintext highlighter-rouge">pedestrian</code>, and <code class="language-plaintext highlighter-rouge">pedestrian group</code>.
+This alternative class definition can be utilized for tasks, where a more balanced label distribution is required - for example during the training of a neural network.
+For this mapping, the <code class="language-plaintext highlighter-rouge">animal</code> and the <code class="language-plaintext highlighter-rouge">other</code> class are not reassigned.
+Instead they may be used, e.g., for a hidden class detection task.</p>
+
+<h2 id="the-labeling-process">The Labeling Process</h2>
+
+<p>Two labels are assigned to each individual detection of a
+dynamic object: a <code class="language-plaintext highlighter-rouge">label id</code> and a <code class="language-plaintext highlighter-rouge">track id</code>.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">label id</code> is an integer describing the semantic class the respective object belongs to.
+On the other hand, the <code class="language-plaintext highlighter-rouge">track id</code> identifies single real world objects uniquely over the whole recording time.
+That is, all detections of the same object have the same <code class="language-plaintext highlighter-rouge">track id</code>.
+If an object was occluded for more than 500 ms or if the movement stopped for this period of time (e.g. if a <code class="language-plaintext highlighter-rouge">car</code> stopped at a red light), then a new <code class="language-plaintext highlighter-rouge">track id</code> is assigned as soon as detections of the moving object are measured again.</p>
+
+<p>The labelers were instructed to label the objects in such a way that realistic and consistent object proportions are maintained.
+Since automotive radar sensors have a rather low accuracy in the azimuth direction, especially in greater distances the contour of objects is not captured accurately.
+For example, deviations in the azimuth direction can cause that an object in front of the ego-vehicle appears much wider than it actually is.
+In this case, detections with a non-zero Doppler velocity are reported at positions which are unrealistically far away from the true object’s position. These detections are then not added to the object. This can be seen in the following image, where the encircled detections are not added to the <code class="language-plaintext highlighter-rouge">truck</code> cluster, even though they have a non-zero Doppler velocity:</p>
+
+<p><img src="../../assets/labeling_wide.jpg" width="500" class="align-center" />
+  <img src="../../assets/labeling_wide.svg" width="500" class="align-center" /></p>
+
+<p>An object’s true dimensions were estimated by the labelers over the whole time during which detections from the object were measured.
+This approach causes that at first sight the labeling results seem wrong, since detections with non-zero Doppler close to a moving object are not marked as members of this object.
+However, this visual impression is in most cases misleading and great care was taken that object dimensions are consistent over time.
+This choice has the great upside that realistic object extents can be estimated by object detection algorithms.</p>
+
+<p>When looking at detections from multiple sensor scans, one should be careful with the reasoning about whether a detections belongs to an object or not. Due to the movement of the object, its detections are spread out in an earth-fixed coordinate system. Hence, the length of an object is increased proportionally to its velocity and the size of the selected time window.
+The questions whether a detection belongs to an object should hence be made always with only a single measurement frame displaced in a viewer.</p>
+
+<p>Mirror effects, ambiguities in each measurement dimension as well as false-positive detections from large sidelobes can result in detections with non-zero Doppler which do not belong to any moving object.
+These detections have the default label <code class="language-plaintext highlighter-rouge">static</code>.
+Hence, simply thresholding all detections in the Doppler dimension does not result in the set of detections that belong to moving road users.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-03-25">March 25, 2021</time></p>
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/dataset/examples/" class="pagination--pager" title="Examples
+">Previous</a>
+    
+    
+      <a href="/dataset/sensors/" class="pagination--pager" title="Sensor Setup
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 RadarScenes. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>. &nbsp;&nbsp;&nbsp;&nbsp;  <a href="/impressum" rel="nofollow">Legal Notice</a> &nbsp;&nbsp;  <a href="/privacy" rel="nofollow">Privacy</a></div>
+
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
